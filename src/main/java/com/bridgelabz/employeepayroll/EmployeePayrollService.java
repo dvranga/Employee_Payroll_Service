@@ -1,8 +1,10 @@
 package com.bridgelabz.employeepayroll;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class EmployeePayrollService {
+
 
 	public enum IOService{CONSOLE_IO, FILE_IO, DB_IO, REST_IO}
 	private List<EmployeePayrollData> employeePayrollList;
@@ -41,6 +43,10 @@ public class EmployeePayrollService {
 	public boolean checkEmployeeInSyncWithDB(String name) {
 		List<EmployeePayrollData> employeePayrollData = employeePayrollDBService.getEmployeePayrollData(name);
 		return employeePayrollData.get(0).equals(getEmployeePayrollData(name));
+	}
+
+	public List<EmployeePayrollData> getEmployeePayrollDataByGivenDataRange(LocalDate startDate, LocalDate endDate) {
+		return employeePayrollDBService.getEmployeePayrollDataByDataRange(startDate,endDate);
 	}
 
 
