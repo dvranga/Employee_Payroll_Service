@@ -5,16 +5,20 @@ import java.util.Objects;
 
 public class EmployeePayrollData {
 
-    private final int id;
-    private final String name;
-    private final double salary;
-    private final LocalDate startDate;
+    public int id;
+    public String name;
+    public double salary;
+    public LocalDate startDate;
 
-    public EmployeePayrollData(int id, String name, double salary, LocalDate startDate) {
+    public EmployeePayrollData(int id, String name, double salary) {
 
         this.id = id;
         this.name = name;
         this.salary = salary;
+    }
+
+    public EmployeePayrollData(int id, String name, double salary, LocalDate startDate) {
+        this(id,name,salary);
         this.startDate = startDate;
     }
 
