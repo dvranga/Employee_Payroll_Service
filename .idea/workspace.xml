@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
       </list>
     </recent_temporary>
   </component>
@@ -174,27 +176,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java</url>
-          <line>15</line>
-          <properties class="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" method="givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java</url>
-          <line>22</line>
-          <properties class="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" method="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
