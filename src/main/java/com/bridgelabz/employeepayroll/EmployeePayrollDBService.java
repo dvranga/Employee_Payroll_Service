@@ -156,6 +156,7 @@ public class EmployeePayrollDBService {
         EmployeePayrollData employeePayrollData=null;
         try {
             connection = this.getConnection();
+            connection.setAutoCommit(false);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -165,12 +166,15 @@ public class EmployeePayrollDBService {
             int rowAffected = statement.executeUpdate(sql, statement.RETURN_GENERATED_KEYS);
             if (rowAffected==1) {
                 ResultSet resultSet = statement.getGeneratedKeys();
-                if (resultSet.next()){
-                    employeeId = resultSet.getInt(1);
-                }
+                if (resultSet.next()) employeeId = resultSet.getInt(1);
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
         }
         try (Statement statement = connection.createStatement()) {
             double deductions = salary * 0.2;
@@ -185,6 +189,25 @@ public class EmployeePayrollDBService {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+        try {
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (connection!= null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return employeePayrollData;
 
