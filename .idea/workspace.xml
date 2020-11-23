@@ -6,6 +6,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,22 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollDB_AbilityToRetrievAllTheEmployees_JoinedInParticularDataRanga">
-    <configuration name="EmployeePayrollServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employeepayroll" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender">
     <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollDB_AbilityToRetrievAllTheEmployees_JoinedInParticularDataRanga" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -88,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +86,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrived_shouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -114,13 +102,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenEmployeePayrollInDB_whenRetrived_shouldMatchEmployeeCount" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +118,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheSumOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employeepayroll" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheSumOfTheSalariesOfFemaleGender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheSumOfTheSalariesOfFemaleGender" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollDB_AbilityToRetrievAllTheEmployees_JoinedInParticularDataRanga" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrived_shouldMatchEmployeeCount" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606033260345</updated>
-      <workItem from="1606033269481" duration="24415000" />
+      <workItem from="1606033269481" duration="28368000" />
     </task>
     <servers />
   </component>

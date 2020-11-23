@@ -5,7 +5,6 @@ import java.util.List;
 
 public class EmployeePayrollService {
 
-
 	public enum IOService{CONSOLE_IO, FILE_IO, DB_IO, REST_IO}
 	private List<EmployeePayrollData> employeePayrollList;
 	private static EmployeePayrollDBService employeePayrollDBService;
@@ -49,5 +48,8 @@ public class EmployeePayrollService {
 		return employeePayrollDBService.getEmployeePayrollDataByDataRange(startDate,endDate);
 	}
 
+	public double performVariousOperations(String average, String m) {
+		return employeePayrollDBService.performVariousOperationsOf(average,m);
+	}
 
 }
