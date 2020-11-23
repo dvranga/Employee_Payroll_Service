@@ -44,12 +44,21 @@ public class EmployeePayrollService {
 		return employeePayrollData.get(0).equals(getEmployeePayrollData(name));
 	}
 
-	public List<EmployeePayrollData> getEmployeePayrollDataByGivenDataRange(LocalDate startDate, LocalDate endDate) {
-		return employeePayrollDBService.getEmployeePayrollDataByDataRange(startDate,endDate);
+	public List<EmployeePayrollData> readEmployeePayrollForDateRange(IOService ioService,
+																	 LocalDate startDate, LocalDate endDate) {
+		if (ioService.equals(IOService.DB_IO)) {
+			return employeePayrollDBService.getEmployeePayrollForDateRange(startDate, endDate);
+		}
+		return null;
 	}
 
-	public double performVariousOperations(String average, String m) {
-		return employeePayrollDBService.performVariousOperationsOf(average,m);
-	}
+
+//	public List<EmployeePayrollData> getEmployeePayrollDataByGivenDataRange(LocalDate startDate, LocalDate endDate) {
+//		return employeePayrollDBService.getEmployeePayrollDataByDataRange(startDate,endDate);
+//	}
+//
+//	public double performVariousOperations(String average, String m) {
+//		return employeePayrollDBService.performVariousOperationsOf(average,m);
+//	}
 
 }
