@@ -194,23 +194,36 @@ public class EmployeePayrollDBService {
 
     }
 
-    public EmployeePayrollData addNewEmployeeDepartments(String name,  String[] departments) {
+    public boolean addNewEmployeeDepartments(String name, String[] departments) {
         List<EmployeePayrollData> employeePayrollData = this.getEmployeePayrollData( name);
         int id = employeePayrollData.get(0).id;
         Connection connection=null;
+        int executeUpdate = -1;
         try {
             connection=this.getConnection();
             Statement statement = connection.createStatement();
             for (String department : departments) {
                 String sql = String.format("INSERT INTO employee_departments (employee_id, department) VALUES" +
                         "('%s','%s')", id, department);
-                int executeUpdate = statement.executeUpdate(sql);
+                executeUpdate = statement.executeUpdate(sql);
                 System.out.println(executeUpdate + " result");
+                if (executeUpdate == 1) {
+                    return true;
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return false;
+    }
+
+    public EmployeePayrollData addNewEmployee(String name, double salary, LocalDate startDate, String gender, String[] departments) {
+        boolean result = this.addNewEmployeeDepartments(name, departments);
+        EmployeePayrollData employeePayrollData=null;
+        if (result) {
+            employeePayrollData = this.addEmployeeToPayroll(name, salary, startDate, gender);
+        }
+        return employeePayrollData;
     }
 }
 

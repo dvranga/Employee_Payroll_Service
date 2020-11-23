@@ -16,7 +16,7 @@ public class EmployeePayrollServiceTest {
 	public void givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount() {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		List<EmployeePayrollData> employeePayrollData=employeePayrollService.readEmployeePayrollData(DB_IO);
-		Assert.assertEquals(7, employeePayrollData.size());
+		Assert.assertEquals(8, employeePayrollData.size());
 	}
 
 	@Test
@@ -36,7 +36,7 @@ public class EmployeePayrollServiceTest {
 		LocalDate endDate = LocalDate.now();
 		List<EmployeePayrollData> employeePayrollData=
 		employeePayrollService.readEmployeePayrollForDateRange(DB_IO, startDate, endDate);
-		Assert.assertEquals(6,employeePayrollData.size());
+		Assert.assertEquals(8,employeePayrollData.size());
 	}
 
 	@Test
@@ -45,7 +45,7 @@ public class EmployeePayrollServiceTest {
 		employeePayrollService.readEmployeePayrollData(DB_IO);
 		Map<String, Double> averageSalaryByGender = employeePayrollService.readAverageSalaryByGender(DB_IO);
 		System.out.println(averageSalaryByGender.get("M")+" "+averageSalaryByGender.get("F"));
-		Assert.assertTrue(averageSalaryByGender.get("M").equals(3800000.00) &&
+		Assert.assertTrue(averageSalaryByGender.get("M").equals(4142857.1428571427) &&
 				averageSalaryByGender.get("F").equals(6000000.00));
 	}
 
@@ -63,6 +63,16 @@ public class EmployeePayrollServiceTest {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		employeePayrollService.readEmployeePayrollData(DB_IO);
 		String departments[]={"Devops","Testing","Fullstack"};
-		employeePayrollService.addEmployeeDepartments("Terisa",departments);
+		boolean result = employeePayrollService.addEmployeeDepartments("Terisa", departments);
+		Assert.assertTrue(result);
+	}
+
+	@Test
+	public void givenNewEmployee_ShouldInsertInMultipleTableAtSingleTime() {
+		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+		employeePayrollService.readEmployeePayrollData(DB_IO);
+		String departments[]={"Devops","Testing","Fullstack"};
+		boolean newEmployee = employeePayrollService.addNewEmployee("Charlie", 5000000.00, LocalDate.now(), "M", departments);
+		Assert.assertTrue(newEmployee);
 	}
 }

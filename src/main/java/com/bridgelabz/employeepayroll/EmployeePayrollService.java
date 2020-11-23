@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class EmployeePayrollService {
 
+
 	public enum IOService{CONSOLE_IO, FILE_IO, DB_IO, REST_IO}
 	private List<EmployeePayrollData> employeePayrollList;
 	private static EmployeePayrollDBService employeePayrollDBService;
@@ -64,9 +65,13 @@ public class EmployeePayrollService {
 		employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name, salary, startDate, gender));
 	}
 
-	public void addEmployeeDepartments(String name,  String[] departments) {
-		employeePayrollList.add(employeePayrollDBService.addNewEmployeeDepartments(name,  departments));
+	public boolean addEmployeeDepartments(String name,  String[] departments) {
+		boolean result = employeePayrollDBService.addNewEmployeeDepartments(name, departments);
+		return result;
 	}
 
+	public boolean addNewEmployee(String name, double salary, LocalDate startDate, String gender, String[] departments) {
+		return employeePayrollList.add(employeePayrollDBService.addNewEmployee(name, salary, startDate, gender, departments));
+	}
 
 }
