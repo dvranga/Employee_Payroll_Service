@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
@@ -58,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount">
+  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue">
     <configuration name="EmployeePayrollServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -106,22 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employeepayroll" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -138,13 +123,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employeepayroll" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
+      <option name="METHOD_NAME" value="givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMaxOfTheSalariesOfFemaleGender" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +184,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java</url>
-          <line>14</line>
+          <line>15</line>
           <properties class="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" method="givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount">
             <option name="EMULATED" value="true" />
           </properties>
@@ -191,7 +192,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java</url>
-          <line>21</line>
+          <line>22</line>
           <properties class="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" method="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB">
             <option name="EMULATED" value="true" />
           </properties>
