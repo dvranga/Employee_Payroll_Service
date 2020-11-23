@@ -74,4 +74,12 @@ public class EmployeePayrollService {
 		return employeePayrollList.add(employeePayrollDBService.addNewEmployee(name, salary, startDate, gender, departments));
 	}
 
+	public boolean deleteEmployee(String name, int id) {
+		List<EmployeePayrollData> employeePayrollData = employeePayrollDBService.deleteEmployee(name, id);
+		System.out.println(employeePayrollData);
+		boolean remove = employeePayrollList.remove(employeePayrollData);
+		return true;
+
+	}
+
 }

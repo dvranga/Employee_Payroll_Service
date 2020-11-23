@@ -16,7 +16,7 @@ public class EmployeePayrollServiceTest {
 	public void givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount() {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		List<EmployeePayrollData> employeePayrollData=employeePayrollService.readEmployeePayrollData(DB_IO);
-		Assert.assertEquals(8, employeePayrollData.size());
+		Assert.assertEquals(5, employeePayrollData.size());
 	}
 
 	@Test
@@ -72,7 +72,15 @@ public class EmployeePayrollServiceTest {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		employeePayrollService.readEmployeePayrollData(DB_IO);
 		String departments[]={"Devops","Testing","Fullstack"};
-		boolean newEmployee = employeePayrollService.addNewEmployee("Charlie", 5000000.00, LocalDate.now(), "M", departments);
+		boolean newEmployee = employeePayrollService.addNewEmployee("Chandu", 5000000.00, LocalDate.now(), "M", departments);
 		Assert.assertTrue(newEmployee);
+	}
+
+	@Test
+	public void givenEmployeeWhenDeleteShouldUpdateIsActiveAsFalseAndRemoveObjectFromPayroll() {
+		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+		employeePayrollService.readEmployeePayrollData(DB_IO);
+		boolean deleteEmployee = employeePayrollService.deleteEmployee("Bill", 27);
+		Assert.assertTrue(deleteEmployee);
 	}
 }

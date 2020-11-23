@@ -4,12 +4,9 @@
     <list default="true" id="e696a9b3-7657-4612-82da-2fb6d6345557" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
@@ -35,6 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder (4)/Employee-Payroll-UC12_RemoveEmployeeFromThePayrollDB" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -61,23 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenNewEmployee_ShouldInsertInMultipleTableAtSingleTime">
-    <configuration name="EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employeepayroll" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenEmployeeWhenDeleteShouldUpdateIsActiveAsFalseAndRemoveObjectFromPayroll">
     <configuration name="EmployeePayrollServiceTest.givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -89,6 +71,38 @@
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
       <option name="METHOD_NAME" value="givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employeepayroll" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
+      <option name="METHOD_NAME" value="givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeePayrollServiceTest.givenEmployeeWhenDeleteShouldUpdateIsActiveAsFalseAndRemoveObjectFromPayroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employeepayroll" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
+      <option name="METHOD_NAME" value="givenEmployeeWhenDeleteShouldUpdateIsActiveAsFalseAndRemoveObjectFromPayroll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,29 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employeepayroll" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeeWhenDeleteShouldUpdateIsActiveAsFalseAndRemoveObjectFromPayroll" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewEmployee_ShouldInsertInMultipleTableAtSingleTime" />
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606033260345</updated>
       <workItem from="1606033269481" duration="28368000" />
+      <workItem from="1606152113918" duration="4162000" />
     </task>
     <servers />
   </component>
@@ -183,6 +182,25 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="sql" />
