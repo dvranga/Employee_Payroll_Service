@@ -4,8 +4,13 @@
     <list default="true" id="e696a9b3-7657-4612-82da-2fb6d6345557" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB">
+  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll">
     <configuration name="EmployeePayrollServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -71,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +86,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
+      <option name="METHOD_NAME" value="givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollInDB_whenRetrieved_shouldMatchEmployeeCount" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
       </list>
     </recent_temporary>
   </component>
@@ -174,5 +179,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="sql" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

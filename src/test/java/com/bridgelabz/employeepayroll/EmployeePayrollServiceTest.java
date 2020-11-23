@@ -58,7 +58,11 @@ public class EmployeePayrollServiceTest {
 		Assert.assertTrue(result);
 	}
 
-
-
-
+	@Test
+	public void givenDifferentDepartmentOfEmployee_ShouldInsertIntoTheNewModifiedTablesOfEmployee_payroll() {
+		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+		employeePayrollService.readEmployeePayrollData(DB_IO);
+		String departments[]={"Devops","Testing","Fullstack"};
+		employeePayrollService.addEmployeeDepartments("Terisa",departments);
+	}
 }

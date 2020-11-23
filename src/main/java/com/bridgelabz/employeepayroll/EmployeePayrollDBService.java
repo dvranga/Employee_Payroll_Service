@@ -130,25 +130,6 @@ public class EmployeePayrollDBService {
         return genderToAverageSalaryMap;
     }
 
-    public EmployeePayrollData addEmployeeToPayrollUC7(String name, double salary, LocalDate startDate, String gender) {
-        int employeeId=-1;
-        EmployeePayrollData employeePayrollData = null;
-        String sql = String.format("INSERT INTO employee_payroll (name,gender,salary,start)" +
-                "VALUES ('%s','%s','%s','%s')", name, gender, salary, Date.valueOf(startDate));
-        try (Connection connection = this.getConnection()) {
-            Statement statement = connection.createStatement();
-            int rowAffected = statement.executeUpdate(sql, statement.RETURN_GENERATED_KEYS);
-            if (rowAffected==1) {
-                ResultSet resultSet = statement.getGeneratedKeys();
-                if (resultSet.next()) employeeId = resultSet.getInt(1);
-            }
-            employeePayrollData = new EmployeePayrollData(employeeId, name, salary, startDate);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return employeePayrollData;
-    }
-
     public EmployeePayrollData addEmployeeToPayroll(String name, double salary, LocalDate startDate,
                                                     String gender) {
         int employeeId=-1;
@@ -211,6 +192,25 @@ public class EmployeePayrollDBService {
         }
         return employeePayrollData;
 
+    }
+
+    public EmployeePayrollData addNewEmployeeDepartments(String name,  String[] departments) {
+        List<EmployeePayrollData> employeePayrollData = this.getEmployeePayrollData( name);
+        int id = employeePayrollData.get(0).id;
+        Connection connection=null;
+        try {
+            connection=this.getConnection();
+            Statement statement = connection.createStatement();
+            for (String department : departments) {
+                String sql = String.format("INSERT INTO employee_departments (employee_id, department) VALUES" +
+                        "('%s','%s')", id, department);
+                int executeUpdate = statement.executeUpdate(sql);
+                System.out.println(executeUpdate + " result");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
 
