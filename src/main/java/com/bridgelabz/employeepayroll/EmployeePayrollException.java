@@ -1,15 +1,15 @@
-package Employee_Payroll;
+package com.bridgelabz.employeepayroll;
 
 public class EmployeePayrollException extends Exception {
 
-	enum ExceptionType {
-		DatabaseException, NoSuchClass, ResourcesNotClosedException,  ConnectionFailed, CommitFailed
-	}
+    enum ExceptionType {
+        DatabaseException,
+    }
 
-	public ExceptionType type;
+    public ExceptionType type;
 
-	public EmployeePayrollException(String message, ExceptionType type) {
-		super(message);
-		this.type = type;
-	}
+    public EmployeePayrollException(String message, ExceptionType type) {
+        super(message);
+        this.type = type;
+    }
 }

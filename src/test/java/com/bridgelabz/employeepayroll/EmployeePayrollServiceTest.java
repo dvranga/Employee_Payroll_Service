@@ -20,7 +20,7 @@ public class EmployeePayrollServiceTest {
 	}
 
 	@Test
-	public void givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB() {
+	public void givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB() throws EmployeePayrollException {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		List<EmployeePayrollData> employeePayrollData=employeePayrollService.readEmployeePayrollData(DB_IO);
 		employeePayrollService.updateEmployeeSalary("Terisa",6000000.00);

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e696a9b3-7657-4612-82da-2fb6d6345557" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollException.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +28,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder (4)/Employee-Payroll-UC12_RemoveEmployeeFromThePayrollDB" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\employeepayroll\src\main\java\com\bridgelabz\employeepayroll" />
+      <recent name="C:\employeepayroll\src\test\java\com\bridgelabz\employeepayroll" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bridgelabz.employeepayroll" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\employeepayroll\src\test\java\com\bridgelabz\employeepayroll" />
-      <recent name="C:\employeepayroll\src\main\java\com\bridgelabz\employeepayroll" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +59,7 @@
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.EmployeePayroleException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,7 +75,7 @@
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.EmployeePayroleException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +91,7 @@
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.EmployeePayroleException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +107,7 @@
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.EmployeePayroleException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +123,7 @@
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.employeepayroll.*" />
+          <option name="PATTERN" value="com.bridgelabz.employeepayroll.EmployeePayroleException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606033260345</updated>
       <workItem from="1606033269481" duration="28368000" />
-      <workItem from="1606152113918" duration="4162000" />
+      <workItem from="1606152113918" duration="6065000" />
     </task>
     <servers />
   </component>
@@ -191,7 +186,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java</url>
-          <line>243</line>
+          <line>242</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
