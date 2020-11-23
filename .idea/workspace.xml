@@ -6,10 +6,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollDBService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/employeepayroll/EmployeePayrollService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollDBService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService$IOService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/employeepayroll/EmployeePayrollService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/employeepayroll/EmployeePayrollServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue">
+  <component name="RunManager" selected="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB">
     <configuration name="EmployeePayrollServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
@@ -107,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employeepayroll" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz.employeepayroll" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.employeepayroll.EmployeePayrollServiceTest" />
-      <option name="METHOD_NAME" value="givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" />
+      <option name="METHOD_NAME" value="givenNewEmployee_WhenAdded_ShouldSyncWithDB" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenNewEmployee_WhenAdded_ShouldSyncWithDB" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenPayRollData_WhenAverageSalaryRetrievdByGender_ShouldReturnProperValue" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenDateRange_whenRetrieved_ShouldMatchEmployeeCount" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest" />
         <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheCountOfTheEmployeeByGender" />
-        <item itemvalue="JUnit.EmployeePayrollServiceTest.givenEmployeePayrollData_ShouldReturnTheMinOfTheSalariesOfFemaleGender" />
       </list>
     </recent_temporary>
   </component>

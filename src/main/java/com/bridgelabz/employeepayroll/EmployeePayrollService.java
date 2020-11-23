@@ -61,6 +61,11 @@ public class EmployeePayrollService {
 	}
 
 
+	public void addEmployeePayroll(String name, double salary, LocalDate startDate, String gender) {
+		employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name, salary, startDate, gender));
+	}
+
+
 //	public List<EmployeePayrollData> getEmployeePayrollDataByGivenDataRange(LocalDate startDate, LocalDate endDate) {
 //		return employeePayrollDBService.getEmployeePayrollDataByDataRange(startDate,endDate);
 //	}
