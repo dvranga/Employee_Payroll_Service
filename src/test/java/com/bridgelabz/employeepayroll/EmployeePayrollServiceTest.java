@@ -33,6 +33,5 @@ public class EmployeePayrollServiceTest {
 		List<EmployeePayrollData> employeePayrollData=employeePayrollService.readEmployeePayrollData(DB_IO);
 		List<EmployeePayrollData> employeePayrollDataByGivenDataRange = employeePayrollService.getEmployeePayrollDataByGivenDataRange(LocalDate.of(2018, 01, 01), LocalDate.now());
 		Assert.assertEquals(3,employeePayrollDataByGivenDataRange.size());
-
 	}
 }
